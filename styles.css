@@ -1,0 +1,163 @@
+:root {
+  --text: #111;
+  --muted: #221717;
+  --primary: #7a0606;
+  --accent: #7a0606;
+  --bg: #bac7e2;
+  --card: #fff;
+  --radius: 12px;
+}
+
+
+/* I used Grid for the two-column layout because it allows equal-width sections easily. */
+/* It also also makes spacing between Available and Saved simple to manage and responsive. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  background: var(--card);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+header span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+nav {
+  background: #fff;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 0.25rem;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg);
+}
+
+.add-container {
+  margin-bottom: 1rem;
+}
+
+.add-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.add-box input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+}
+
+.add-box button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+.add-box button:hover {
+  background: #004cd1;
+}
+
+.error {
+  color: var(--accent);
+  font-size: 0.9rem;
+  min-height: 1em;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card .category {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.card button {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.card button.save {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.card button.remove {
+  background: var(--accent);
+  color: white;
+}
+
+
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* Responsive layout */
+@media (min-width: 481px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}

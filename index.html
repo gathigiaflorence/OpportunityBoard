@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opportunity Board 6092</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Opportunity Board 6092 <span id="count" aria-live="polite">(0)</span></h1>
+  </header>
+
+  <nav aria-label="Opportunity filters">
+    <form id="filters">
+      <fieldset>
+        <legend>Filter Opportunities</legend>
+        <label>
+          <input type="radio" name="filter" value="all" checked> All
+        </label>
+        <label>
+          <input type="radio" name="filter" value="internship"> Internships
+        </label>
+        <label>
+          <input type="radio" name="filter" value="scholarship"> Scholarships
+        </label>
+      </fieldset>
+    </form>
+  </nav>
+
+
+  <div class="add-container">
+    <label for="opportunity">Add opportunity</label>
+    <div class="add-box">
+      <input type="text" id="opportunity" placeholder="Enter opportunity title">
+      <button id="add-btn">Add</button>
+    </div>
+    <p id="message" class="error" aria-live="polite"></p>
+  </div>
+
+  <main>
+    <section aria-labelledby="available-title">
+      <h2 id="available-title">Available</h2>
+      <ul id="available" class="list" aria-live="polite"></ul>
+    </section>
+
+    <section aria-labelledby="saved-title">
+      <h2 id="saved-title">Saved</h2>
+      <ul id="saved" class="list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
