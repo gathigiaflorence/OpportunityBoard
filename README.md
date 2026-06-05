@@ -1,4 +1,4 @@
-# Mid-Semester
+# Opportunity Baord
 A simple web app that lets students browse and save opportunities like internships,and scholarships. It Uses SID4 = 6092 in the title and localStorage key.
 
 ## Features
@@ -14,3 +14,5 @@ A simple web app that lets students browse and save opportunities like internshi
 - HTML5 (semantic and accessible)
 - CSS3 (variables, Grid layout, responsive design)
 - JavaScript (ES6, DOM manipulation, event delegation)
+
+## The live URL is at https://gathigiaflorence.github.io/Mid-Semester/
