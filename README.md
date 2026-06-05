@@ -16,3 +16,6 @@ A simple web app that lets students browse and save opportunities like internshi
 - JavaScript (ES6, DOM manipulation, event delegation)
 
 The live URL is at https://gathigiaflorence.github.io/OpportunityBoard/
+
+<img width="953" height="554" alt="image" src="https://github.com/user-attachments/assets/acc03c5a-ce17-4af6-986a-396a1da1def1" />
+
